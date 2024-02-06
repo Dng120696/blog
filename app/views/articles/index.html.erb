@@ -1,0 +1,22 @@
+<h1>Articles Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+      <th> Writer Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td> <%=article.id%> </td>
+        <td> <%=article.title%> </td>
+        <td> <%=article.body%> </td>
+        <td> <%=article.writer_name%> </td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
