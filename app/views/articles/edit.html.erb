@@ -1,0 +1,19 @@
+<h1>Update Articles</h1>
+
+<%= form_with model: @article  do |f|%>
+<p>
+  <%= f.label :title%>
+  <%= f.text_field :title%>
+</p>
+<p>
+  <%= f.label :body%>
+  <%= f.text_area :body%>
+</p>
+<p>
+    <%= f.submit "Update" %>
+</p>
+
+<%end%>
+<div>
+  <%= link_to 'Cancel', articles_path%>
+</div>
